@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+form {
+    display: grid;
+    margin: 50px;
+    max-width: 700px;
+    gap: 15px;
+    border: 1px solid;
+}
+
+form input {
+    width: 100%;
+}
+
+form label {
+    padding: 0.5em;
+    text-align: right;
+}
+
+@media screen and (min-width:400px){
+    form {
+        grid-template-columns: 200px 1fr;
+    }
+    input {
+        grid-column: 2/3;
+    }
+    label {
+        grid-column: 1/2;
+    }
+}
